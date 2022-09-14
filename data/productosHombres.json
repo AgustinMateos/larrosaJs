@@ -1,0 +1,7 @@
+   [{"id":1, "nombre":"remera1", "precio":1700,"imagen":"../imagenes/camperaH.jpeg"},
+    {"id":2, "nombre":"remera2", "precio":1200,"imagen":"../imagenes/camperaH.jpeg"},
+    {"id":3, "nombre":"pantalon3", "precio":1300,"imagen":"../imagenes/pantalonh.jpg"},
+    {"id":4, "nombre":"conjunta4", "precio":1500,"imagen":"../imagenes/conjuntoH.jpeg"},
+    {"id":5, "nombre":"pantalon3", "precio":1300,"imagen":"../imagenes/pantalonh.jpg"},
+    {"id":6, "nombre":"conjunta4", "precio":1500,"imagen":"../imagenes/conjuntoH.jpeg"}
+]

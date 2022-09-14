@@ -130,3 +130,20 @@
 
     .centrado{justify-content: center;
         text-align: center;font-family: "Permanent Marker";}
+
+
+.btn-warning2 {
+    color: #f9fafb;
+    background-color: #8d0df0;
+    border: 3px solid #ffc107;
+}
+.btn-primary1 {
+    color: #fff;
+    background-color: #bdbdbd;
+    border-color: #8c42d0;
+}
+
+.bordesImgCarrito{
+    border: 5px double white;
+    border-radius: 26px;
+}

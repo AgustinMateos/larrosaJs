@@ -13,23 +13,22 @@ function renderProductosCarrito() {
   } else {
     contenido += `<table class= "table"> 
     <tr>
-    <td class="text-end" colspan="6"> <a href="#" class="btn btn-warning"  title="Vaciar Producto" onclick="vaciarCarrito()">Vaciar Carrito<img src="../imagenes/basura.png" alt="eliminar" title="elimiar producto"  width="25"> </td>
+    <td class="text-end" colspan="6"> <a href="#" class="btn btn-warning2"  title="Vaciar Producto" onclick="vaciarCarrito()">Vaciar Carrito<img src="../imagenes/basura.png" alt="eliminar" title="elimiar producto"  width="25"> </td>
     </tr>`;
 
     productosHombres.forEach((productoH) => {
       contenido += `
         <tr>
-        <td> <img src="${productoH.imagen}" class="card-top" width="126" height="120" alt="${productoH.nombre}">
+        <td> <img src="${productoH.imagen}" class="card-top bordesImgCarrito" width="126" height="120" alt="${productoH.nombre}">
         <td> ${productoH.nombre} </td>
         <td> Precio: c/u $  ${productoH.precio} </td>
-        <td><a href="#" class="btn btn-warning"  title="eliminar producto" onclick="eliminarItemCarrito(${productoH.id})">- </a> ${productoH.cantidad} <a href="#" class="btn btn-warning"  title="agregar producto" onclick="agregarItemCarrito(${productoH.id})">+</td>
-        <td> precio: ${productoH.precio * productoH.cantidad} </td>
-        <td><a href="#" class="btn btn-warning" onclick="eliminarItemCarrito(${productoH.id})"><img src="../imagenes/basura.png" alt="eliminar" title="elimiar producto" class="text-end" width="25"></a></td>
+        <td><input type="button" class="btn btn-warning2"  title="eliminar producto" onclick="eliminarItemCarrito(${productoH.id})" value="-"> </input> ${productoH.cantidad} <input type="button" class="btn btn-warning2" value="+" title="agregar producto" onclick="agregarItemCarrito(${productoH.id})"></td>
+        <td> Precio: $ ${productoH.precio * productoH.cantidad} </td>
         </tr>`;
     });
     contenido += `<tr>
     <td colspan="4">Total a Pagar: </td>
-    <td colspan="2"><b>$${totalaPagar()}</b></td></tr></table>
+    <td colspan="4"><b>$${totalaPagar()}</b></td></tr></table>
     `
     
   }

@@ -1,24 +1,18 @@
-const productosHombres=[{id:1, nombre:"remera1", precio:1700,imagen:"../imagenes/camperaH.jpeg"},
-                        {id:2, nombre:"remera2", precio:1200,imagen:"../imagenes/camperaH.jpeg"},
-                        {id:3, nombre:"pantalon3", precio:1300,imagen:"../imagenes/pantalonh.jpg"},
-                        {id:4, nombre:"conjunta4", precio:1500,imagen:"../imagenes/conjuntoH.jpeg"},
-                        {id:5, nombre:"pantalon3", precio:1300,imagen:"../imagenes/pantalonh.jpg"},
-                        {id:6, nombre:"conjunta4", precio:1500,imagen:"../imagenes/conjuntoH.jpeg"}
-
-];
-
-///
-function guardarProductosHombresLS(productosHombres){
-    localStorage.setItem("productos Hombres",JSON.stringify(productosHombres));
+async function fetchProductos(){
+  const respuesta = await fetch("../data/productosHombres.json") 
+  return await respuesta.json();
 }
+
+let catalogoHombres=[];
+
 
 function cargarProductosLS(){
     return JSON.parse(localStorage.getItem("productos Hombres")) || [];
 
 }
 //
-function guardarProductosHombresCarrito(productosHombres){
-  localStorage.setItem("productosHombresCarrito",JSON.stringify(productosHombres));
+function guardarProductosHombresCarrito(catalogoHombres){
+  localStorage.setItem("productosHombresCarrito",JSON.stringify(catalogoHombres));
 }
 
 function cargarProductosCarrito(){
@@ -146,7 +140,7 @@ function totalaPagar(){
 
 
 
-guardarProductosHombresLS(productosHombres);
+guardarProductosHombresLS(catalogoHombres);
 
 
 
