@@ -1,0 +1,132 @@
+#productosHombres{    text-align: center;    justify-content: center; border: 8px double white; }
+.header__container__navbar{flex-direction: column;background-color: black;    font-size: 30px;
+    font-family: "Permanent Marker";}
+.card {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.mercaderia{justify-content: center;
+    text-align: center;}
+
+.mainTituloH{color: white;font-family: "Permanent Marker";}
+.header__container__logotipo--texto{color: white;font-family: "Permanent Marker";; font-size: 20px;}
+
+.mainRH{background-color: black;}
+.bodyCarrito{background-color: black; color: white;}
+.table {
+    color: #f8f9fa;
+}
+.alert-danger {
+    color: #842029;
+    background-color: #0e0d0d;
+    border-color: #0a0a0a;
+}
+.alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    color: #fff;
+     background-color: black; 
+     border-color:transparent; 
+}
+
+.footer {
+    background-color: black;}
+
+    .footer__container__logotipoFlex {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .footer__container__logotipo--img {
+        border: 2px white solid;
+        border-radius: 100px;
+        transition: 1s;
+    }
+
+    .footer__container__logotipo--img:hover {
+        transform: scale(1.1);
+    }
+
+    .footer__container__aboutUs {
+        display: block;
+        text-align: center;
+        padding-top: 20px;}
+
+        .footer__container__aboutUs__estilo {
+            font-size: 40px;
+            font-family: "Permanent Marker";
+            ;
+            color: white;
+            text-decoration: none;
+            list-style-type: none;}
+            .footer__container__aboutUs__estilo:hover {
+                text-decoration: underline;
+                
+                color: white;
+            }
+    
+
+    .footer__container__lista {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;}
+
+        .footer__container__lista--item a {
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            font-family: "Permanent Marker";
+            font-size: 25px;}
+            
+            .footer__container__lista--item a:hover {
+                text-decoration: underline;
+            } 
+    
+
+    .footer__container__span {
+        text-align: center;
+        color:white;
+        padding-bottom: 20px;
+    }
+
+    .imgcenter {
+        text-align: center;
+    }
+
+
+    .notificacionAgregado{
+        background: rgb(225, 162, 66);
+        font-family: "Permanent Marker";
+    }
+
+    .notificacionEliminado{
+        background: rgb(225, 66, 66);
+        font-family: "Permanent Marker";
+    }
+
+    .notificacionCarritoVacio{
+        background: rgb(122, 25, 25);
+        font-family: "Permanent Marker";
+    }
+
+    .alert1 {
+        position: relative;
+        padding: 1rem 1rem;
+        margin-bottom: 0;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        justify-content: center;
+    }
+
+    .centrado{justify-content: center;
+        text-align: center;font-family: "Permanent Marker";}
